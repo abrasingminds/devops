@@ -7,4 +7,11 @@ jobs:
         steps:
             - name: hello world
               run: echo 'hello worl'
+    echo-goodbye:
+        runs-on: ubuntu-latest
+        steps:
+            - name: goodbye world
+              run: |
+                echo 'i will fail'
+                exit 1
             
